@@ -1,0 +1,10 @@
+.hero-imagen {
+  max-width: 500px; /* Ajusta este valor según qué tan pequeña la quieras */
+  margin: 40 auto;  /* Opcional: centra el bloque si quieres */
+}
+
+.hero-imagen img {
+  width: 100%;     /* Se adapta al ancho de .hero-imagen */
+  height: auto;    /* Mantiene la proporción original sin deformarse */
+  display: block;
+}
