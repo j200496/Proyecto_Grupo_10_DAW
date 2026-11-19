@@ -9,7 +9,7 @@
       --ink: #24221e;
       --muted: #716d65;
       --gold: #bf9147;
-      --gold-dark: #956c2d;
+      --gold-dark: #8a6a3a;
       --cream: #faf8f3;
       --line: #e8e2d8;
       --white: #fff;
@@ -199,7 +199,7 @@
     }
 
     .submit-button:hover {
-      background: #795421;
+      background: #fab24c;
       transform: translateY(-1px);
     }
 
@@ -289,7 +289,6 @@
   </header>
 
   <section class="hero" id="inicio">
-    <p class="eyebrow">Restaurante premium</p>
     <h1>Reserva tu mesa</h1>
     <p>Elige el día y la hora. Nosotros nos encargamos de preparar una experiencia especial.</p>
   </section>
@@ -310,7 +309,7 @@
             <div class="field">
               <label for="phone">Teléfono</label>
               <input id="phone" name="phone" type="tel" autocomplete="tel"
-                     placeholder="+34 600 000 000" required>
+                     placeholder="809 986 2568" required>
             </div>
 
             <div class="field full">
@@ -323,20 +322,14 @@
               <input id="date" name="date" type="date" required>
             </div>
 
-            <div class="field">
-              <label for="time">Hora</label>
-              <select id="time" name="time" required>
-                <option value="">Selecciona una hora</option>
-                <option>13:00</option>
-                <option>13:30</option>
-                <option>14:00</option>
-                <option>14:30</option>
-                <option>20:00</option>
-                <option>20:30</option>
-                <option>21:00</option>
-                <option>21:30</option>
-              </select>
-            </div>
+      <div class="field">
+  <label for="time">Hora</label>
+  <div class="time-input">
+    <input type="time" id="time" name="time" required>
+
+    </select>
+  </div>
+</div>
 
             <div class="field">
               <label for="guests">Número de personas</label>
@@ -378,7 +371,7 @@
 
       <aside class="card details" id="nosotros">
         <h2>Una experiencia para disfrutar</h2>
-        <p>Preparamos cada detalle para que solo tengas que sentarte y disfrutar.</p>
+        <p>Somos expertos en preparar cada detalle para que solo tengas que sentarte y disfrutar.</p>
         <ul>
           <li><strong>Confirmación rápida:</strong> recibirás respuesta sobre tu solicitud.</li>
           <li><strong>Atención personalizada:</strong> cuéntanos tus preferencias.</li>
@@ -387,12 +380,11 @@
         <div class="rule"></div>
         <p><strong>Horario</strong><br>
           Martes a domingo<br>
-          Comidas: 13:00–15:00<br>
-          Cenas: 20:00–22:00
+          Comidas: 12:00 PM –5:00 PM<br>
+          Cenas: 7:00PM –12:00 AM
         </p>
         <p id="contacto"><strong>Contacto</strong><br>
-          Tel. +34 600 000 000<br>
-          reservas@restoreserve.es
+          contacto@grupo10.com<br>
         </p>
       </aside>
     </div>
