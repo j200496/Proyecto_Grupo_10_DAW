@@ -1,10 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 99%;
+    min-height: 100%;
+}
+
+
 .hero-imagen {
-  max-width: 500px; /* Ajusta este valor según qué tan pequeña la quieras */
-  margin: 40 auto;  /* Opcional: centra el bloque si quieres */
+  width: 110%;
+  height: 600px;
+  overflow: hidden;
 }
 
 .hero-imagen img {
-  width: 100%;     /* Se adapta al ancho de .hero-imagen */
-  height: auto;    /* Mantiene la proporción original sin deformarse */
-  display: block;
+   width: 99%;
+   height: 110%;
+    object-fit: cover;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    background-color: #1a120b;
+    padding: 26px 0;
+    border-bottom: 2px solid #bf9147;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.bienvenida {
+    text-align: center;
+    padding: 40px 40px;
+    margin-top: 30px;
+}
+
+.bienvenida h1 {
+    margin-bottom: 25px;
+}
+
+.bienvenida h2 {
+    margin-bottom: 25px;
+}
+
+.bienvenida p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.bienvenida h3 {
+    margin-top: 30px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.galeria img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
