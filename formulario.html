@@ -280,9 +280,9 @@
       <a class="brand" href="#inicio">Resto<span>Reserve</span></a>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#reservas" aria-current="page">Reservas</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="reservas.html" aria-current="page">Reservas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -293,133 +293,85 @@
     <p>Elige el día y la hora. Nosotros nos encargamos de preparar una experiencia especial.</p>
   </section>
 
-  <main id="reservas">
-    <div class="booking-layout">
-      <section class="card" aria-labelledby="form-title">
-        <h2 id="form-title">Haz tu reserva</h2>
-        <p class="intro">Completa tus datos y te enviaremos la confirmación.</p>
+  
+<main id="reservas">
+ <div class="booking-layout">
+<section class="card" aria-labelledby="form-title">
+<h2 id="form-title">Haz tu reserva</h2>
+ <p class="intro"> Completa tus datos para solicitar una mesa. </p>
 
-        <form id="reservation-form">
-          <div class="form-grid">
-            <div class="field">
-              <label for="name">Nombre y apellidos</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
-            </div>
+ <form action="#" method="post">
 
-            <div class="field">
-              <label for="phone">Teléfono</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel"
-                     placeholder="809 986 2568" required>
-            </div>
+ <div class="form-grid">
 
-            <div class="field full">
-              <label for="email">Correo electrónico</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
+<div class="field">
+ <label for="name">Nombre y apellidos</label>
+ <input id="name" name="name" type="text" required>
+ </div>
 
-            <div class="field">
-              <label for="date">Fecha</label>
-              <input id="date" name="date" type="date" required>
-            </div>
+<div class="field">
+<label for="phone">Teléfono</label>
+ <input id="phone" name="phone" type="tel"
+ placeholder="809 986 2568">
+ </div>
 
-      <div class="field">
-  <label for="time">Hora</label>
-  <div class="time-input">
-    <input type="time" id="time" name="time" required>
-
-    </select>
+<div class="field full">
+<label for="email">Correo electrónico</label>
+ <input id="email" name="email" type="email" required >
   </div>
+ <div class="field">
+ <label for="date">Fecha</label>
+ <input id="date" name="date" type="date">
 </div>
 
-            <div class="field">
-              <label for="guests">Número de personas</label>
-              <select id="guests" name="guests" required>
-                <option value="">Selecciona</option>
-                <option>1 persona</option>
-                <option>2 personas</option>
-                <option>3 personas</option>
-                <option>4 personas</option>
-                <option>5 personas</option>
-                <option>6 personas</option>
-                <option>Más de 6 personas</option>
-              </select>
-            </div>
+<div class="field">
+  <label for="time">Hora</label>
+ <input type="time" id="time" name="time">
+ </div>
 
-            <div class="field">
-              <label for="occasion">Motivo de la reserva</label>
-              <select id="occasion" name="occasion">
-                <option value="">Opcional</option>
-                <option>Comida o cena</option>
-                <option>Cumpleaños</option>
-                <option>Aniversario</option>
-                <option>Celebración especial</option>
-              </select>
-            </div>
-
-            <div class="field full">
-              <label for="notes">Notas o solicitudes especiales</label>
-              <textarea id="notes" name="notes"
-                        placeholder="Alergias, preferencias de mesa u otra información"></textarea>
-              <p class="hint">Este campo es opcional.</p>
-            </div>
-          </div>
-
-          <button class="submit-button" type="submit">Solicitar reserva</button>
-          <div class="notice" id="form-notice" role="status" aria-live="polite"></div>
-        </form>
-      </section>
-
-      <aside class="card details" id="nosotros">
-        <h2>Una experiencia para disfrutar</h2>
-        <p>Somos expertos en preparar cada detalle para que solo tengas que sentarte y disfrutar.</p>
-        <ul>
-          <li><strong>Confirmación rápida:</strong> recibirás respuesta sobre tu solicitud.</li>
-          <li><strong>Atención personalizada:</strong> cuéntanos tus preferencias.</li>
-          <li><strong>Celebraciones:</strong> indícanos si vienes por una ocasión especial.</li>
-        </ul>
-        <div class="rule"></div>
-        <p><strong>Horario</strong><br>
-          Martes a domingo<br>
-          Comidas: 12:00 PM –5:00 PM<br>
-          Cenas: 7:00PM –12:00 AM
-        </p>
-        <p id="contacto"><strong>Contacto</strong><br>
-          contacto@grupo10.com<br>
-        </p>
-      </aside>
-    </div>
-  </main>
-
-  <footer id="servicios">
-    © 2025 RestoReserve · Sistema de reservas
-  </footer>
-
-  <script>
-    const dateInput = document.getElementById("date");
-    const today = new Date();
-    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
-      .toISOString()
-      .split("T")[0];
-
-    dateInput.min = localToday;
-
-    document.getElementById("reservation-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      if (!this.reportValidity()) return;
-
-      const formData = new FormData(this);
-      const notice = document.getElementById("form-notice");
-      const name = formData.get("name");
-      const date = formData.get("date");
-      const time = formData.get("time");
-
-      notice.textContent =
-        `Gracias, ${name}. Tu solicitud para el ${date} a las ${time} ha sido registrada.`;
-      notice.classList.add("visible");
-      this.reset();
-      dateInput.min = localToday;
-    });
-  </script>
-</body>
-</html>
+<div class="field">
+<label for="guests">Número de personas</label>
+<select id="guests" name="guests">
+<option value="">Selecciona</option>
+<option>1 persona</option>
+<option>2 personas</option>
+<option>3 personas</option>
+<option>4 personas</option>
+<option>5 personas</option>
+<option>6 personas</option>
+<option>Más de 6 personas</option>
+</select>
+</div>
+<div class="field">
+<label for="occasion">Motivo de la reserva</label>
+<select id="occasion" name="occasion">
+<option value="">Selecciona una opción</option>
+<option>Comida o cena</option>
+<option>Cumpleaños</option>
+<option>Aniversario</option>
+<option>Celebración especial</option>
+</select>
+</div>
+<div class="field full">
+<label for="notes">Notas o solicitudes especiales</label>
+<textarea id="notes" name="notes" rows="4" placeholder="Alergias, preferencias de mesa u otra información"></textarea>
+</div>
+</div>
+<button class="submit-button" type="submit">Solicitar reserva</button>
+</form>
+</section>
+<aside class="card details" id="nosotros">
+<h2>Una experiencia para disfrutar</h2>
+<p>Somos expertos en preparar cada detalle para que solo tengas que sentarte y disfrutar.</p>
+<ul>
+<li><strong>Confirmación rápida:</strong> recibirás respuesta sobre tu solicitud.</li>
+<li><strong>Atención personalizada:</strong> cuéntanos tus preferencias.</li>
+<li><strong>Celebraciones:</strong> indícanos si vienes por una ocasión especial.</li>
+</ul>
+<div class="rule"></div>
+<p><strong>Horario</strong><br>Martes a domingo<br>Comidas: 12:00 PM – 5:00 PM<br>Cenas: 7:00 PM – 12:00 AM</p>
+<p id="contacto"><strong>Contacto</strong><br>Restoreserve@grupo10.com</p>
+</aside>
+</div>
+</main>
+<footer id="servicios">© 2025 RestoReserve · Sistema de reservas</footer>
