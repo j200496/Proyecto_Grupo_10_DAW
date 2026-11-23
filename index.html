@@ -61,7 +61,7 @@
         <h3>¡Ven, disfruta y déjanos ser parte de tus mejores momentos!</h3>
 
     </section>
-Interior del restaurante
+
 <div class="galeria">
      <img src="Imagen/images.jpg" >
     <img src="Imagen/iMAGEN.jpg" >
@@ -70,37 +70,38 @@ Interior del restaurante
 
 </main>
 
-    <aside aria-label="Información adicional">
+    <<section class="seccion-contacto">
+    <aside class="info-adicional" aria-label="Información adicional">
       <h2>¿Tienes alguna duda o sugerencia? Contáctanos</h2>
       <a href="#contacto">Solicitar información</a>
     </aside>
-        <div>
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" required autocomplete="name">
-        </div>
 
-        <div>
-          <label for="correo">Correo electrónico</label>
-          <input type="email" id="correo" name="correo" required autocomplete="email">
-        </div>
-
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
-
-        <button type="submit">Enviar mensaje</button>
-      </form>
+    <form id="contacto" class="formulario-contacto">
+      <div>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre completo">
+      </div>
+      <div>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="tu.email@ejemplo.com">
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
     </section>
 
   </main>
 
-  <footer>
-    <address>
-      <p>Grupo10 — Santiago de los Caballeros, República Dominicana</p>
-      <p>Email: <a href="mailto:restoreserve@grupo10.com">restoreserve@grupo10.com</a></p>
-    </address>
-  </footer>
+  <footer class="pie-pagina">
+  <address>
+    <p>Grupo10 — Santiago de los Caballeros, República Dominicana</p>
+    <p>Email: <a href="mailto:restoreserve@grupo10.com">restoreserve@grupo10.com</a></p>
+  </address>
+</footer>
 
 </body>
 </html>

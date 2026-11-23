@@ -74,6 +74,7 @@ nav ul li a {
     text-align: center;
     padding: 40px 40px;
     margin-top: 30px;
+    color  : #d38e20;
 }
 
 .bienvenida h1 {
@@ -107,3 +108,148 @@ nav ul li a {
     object-fit: cover;
     border-radius: 10px;
 }
+
+
+  /* Contenedor general para centrar todo */
+    .seccion-contacto {
+      max-width: 450px;
+      margin: 2rem auto;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* Estilo para el bloque <aside> */
+    .info-adicional {
+      background-color: #eff6ff;
+      border-left: 4px solid #ebcd25;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-adicional h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: #161301;
+    }
+
+    .info-adicional a {
+      display: inline-block;
+      color: #2563eb;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .info-adicional a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contenedor del formulario */
+    .formulario-contacto {
+      padding: 2rem;
+      background-color: #413535;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .formulario-contacto div {
+      margin-bottom: 1.25rem;
+    }
+
+    .formulario-contacto label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #e0d319;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #111827;
+      background-color: #f9fafb;
+      box-sizing: border-box;
+      transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+    }
+
+    .formulario-contacto input:focus,
+    .formulario-contacto textarea:focus {
+      outline: none;
+      border-color: #2563eb;
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .formulario-contacto textarea {
+      resize: vertical;
+    }
+
+    .formulario-contacto button {
+      width: 100%;
+      padding: 0.85rem;
+      background-color: #ebc725;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .formulario-contacto button:hover {
+      background-color: #1d4ed8;
+    }
+    body{
+        background-color: #1a1616;
+    }
+      .pie-pagina {
+    background-color: #3b391e;
+    color: #f8fafc;
+    padding: 2rem 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+    border-top: 4px solid #ecc824;
+  }
+
+
+  .pie-pagina address {
+    font-style: normal;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pie-pagina p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+  }
+
+
+  .pie-pagina p:first-child {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .pie-pagina a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .pie-pagina a:hover {
+    color: #eafd93;
+    text-decoration: underline;
+  }
